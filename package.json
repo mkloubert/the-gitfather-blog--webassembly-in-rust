@@ -1,0 +1,20 @@
+{
+  "name": "the-gitfather-blog--webassembly-in-rust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:node": "wasm-pack build --target nodejs",
+    "build:web": "wasm-pack build --target web",
+    "start": "npm run build:node && tsx ./index.ts",
+    "start:web": "npm run build:web && npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@types/node": "18.19.22",
+    "tsx": "4.7.1"
+  }
+}
